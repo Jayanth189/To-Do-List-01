@@ -14,6 +14,8 @@ app.use(express.static("public"));
 mongoose.connect('mongodb://localhost:27017/todoDB',{useNewUrlParser: true, useUnifiedTopology: true});
 mongoose.set('useFindAndModify',false);
 
+// creating schema
+
 const itemsSchema=new mongoose.Schema({
     name:{
         type: String,
